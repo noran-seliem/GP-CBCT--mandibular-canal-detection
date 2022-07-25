@@ -1,0 +1,2485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2824</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>3</number>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#EDEDED</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="UpperLayout">
+        <item>
+         <widget class="QWidget" name="curveWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="3">
+            <widget class="QPushButton" name="curveMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="curveMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QSlider" name="curveSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="4" colspan="3">
+            <widget class="QGraphicsView" name="curveView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="axialWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="1" column="3">
+            <widget class="QSlider" name="axialSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="axialMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="axialMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="4" colspan="3">
+            <widget class="QGraphicsView" name="axialView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="coronalWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="coronalMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="coronalMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="3">
+            <widget class="QGraphicsView" name="coronalView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="coronalSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="serialWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="serialMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="serialMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSlider" name="serialSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="4">
+            <widget class="QGraphicsView" name="serialView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="LowerLayout">
+        <item>
+         <widget class="QWidget" name="sagittalWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="1">
+            <widget class="QPushButton" name="sagittalMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="sagittalMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="sagittalSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" rowspan="3">
+            <widget class="QGraphicsView" name="sagittalView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="volumeWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="3" column="1">
+            <widget class="QPushButton" name="volumeMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QSlider" name="volumeSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="volumeMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" rowspan="3">
+            <widget class="QOpenGLWidget" name="volumeView">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="panoramaWidget" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0" rowspan="3">
+            <widget class="QGraphicsView" name="panoramaView">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(0, 0, 0);</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSlider" name="panoramaSlider">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="panoramaMinScreen">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/min.png</iconset>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="panoramaMaxScreen">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="toolTip">
+              <string>maximize</string>
+             </property>
+             <property name="toolTipDuration">
+              <number>500</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:#082032;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+             </property>
+             <property name="autoRepeatInterval">
+              <number>100</number>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="QWidget" name="configWidget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_10">
+       <item row="0" column="3">
+        <widget class="QPushButton" name="configRotateButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>rotate</string>
+         </property>
+         <property name="toolTipDuration">
+          <number>500</number>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#082032;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+         </property>
+         <property name="autoRepeatInterval">
+          <number>100</number>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" rowspan="3" colspan="3">
+        <widget class="QGraphicsView" name="configView">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="configApplyRotateButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="toolTip">
+          <string>maximize</string>
+         </property>
+         <property name="toolTipDuration">
+          <number>500</number>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#082032;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</normaloff>../../GP_mandibular_canal_detection/Test Files/15-2-/icons/max.png</iconset>
+         </property>
+         <property name="autoRepeatInterval">
+          <number>100</number>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2824</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(116, 116, 116);
+color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(143, 143, 143);</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(116, 116, 116);
+color: rgb(255, 255, 255);
+selection-color: rgb(255, 255, 255);
+selection-background-color: rgb(143, 143, 143);</string>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="actionNew_Project"/>
+    <addaction name="actionopen_project"/>
+    <addaction name="actionClose_Project"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_Image"/>
+    <addaction name="actionShow_Data_Properities"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionUndo_2"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionAdd_Nerve"/>
+    <addaction name="actionDraw_Curve"/>
+    <addaction name="separator"/>
+    <addaction name="actionDistance_Measure_mm"/>
+    <addaction name="actionAngular_Measure"/>
+    <addaction name="separator"/>
+    <addaction name="action_select_Measure"/>
+    <addaction name="actionClear_Measurements"/>
+    <addaction name="separator"/>
+    <addaction name="actionFiltering"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuViews">
+     <property name="title">
+      <string>Views</string>
+     </property>
+     <addaction name="action3D_view"/>
+     <addaction name="actionAxial_View"/>
+     <addaction name="actionCoronal_View"/>
+     <addaction name="actionSagital_View"/>
+     <addaction name="actionPanorama_View"/>
+     <addaction name="actionCross_Sections_View"/>
+     <addaction name="actionImplant_Tangential_View"/>
+    </widget>
+    <widget class="QMenu" name="menuPanels_2">
+     <property name="title">
+      <string>Panels</string>
+     </property>
+     <addaction name="actionBrigtness_Contrast"/>
+     <addaction name="actionOrtho_Slices"/>
+     <addaction name="actionBuccal_Bite_Registration"/>
+     <addaction name="actionModel_Edit"/>
+     <addaction name="actionVolume_Rendering"/>
+     <addaction name="actionSurfaces"/>
+     <addaction name="actionNotes_List"/>
+     <addaction name="actionNerve_List"/>
+     <addaction name="actionTooth_List"/>
+     <addaction name="actionScreen_shots"/>
+     <addaction name="actionModel_Manipulation"/>
+     <addaction name="actionSegmentation"/>
+    </widget>
+    <widget class="QMenu" name="menuToolbars">
+     <property name="title">
+      <string>Toolbars</string>
+     </property>
+     <addaction name="actionMain_Toolbar"/>
+     <addaction name="actionTools_Toolbar"/>
+     <addaction name="actionVisability_Toolbar"/>
+     <addaction name="actionPanels_Toolbar"/>
+     <addaction name="actionView"/>
+     <addaction name="actionMouse_Toolbar"/>
+     <addaction name="actionMeaasurements_Toolbar"/>
+     <addaction name="actionBio_Toolbar"/>
+     <addaction name="actionPlanning_Toolbar"/>
+     <addaction name="actionMessages_Toolbar"/>
+    </widget>
+    <widget class="QMenu" name="menuPerspectives">
+     <property name="title">
+      <string>Perspectives</string>
+     </property>
+     <addaction name="actionImplant_cross_sections"/>
+     <addaction name="actionImplant_Tangential_3"/>
+     <addaction name="actionImplant_Tangential_5"/>
+     <addaction name="actionMRP"/>
+     <addaction name="action3d_Only"/>
+     <addaction name="actionTabs"/>
+     <addaction name="action3d_OverView"/>
+     <addaction name="action3d_Paronamic"/>
+     <addaction name="action3d_Paronamic_cross_sections"/>
+     <addaction name="action3D_Tangential"/>
+    </widget>
+    <widget class="QMenu" name="menu3D">
+     <property name="title">
+      <string>3D</string>
+     </property>
+     <addaction name="actionAxial_Projection"/>
+     <addaction name="actionCronal_Projection"/>
+     <addaction name="actionSagitial_Projection"/>
+     <addaction name="actionCross_section_Projection"/>
+     <addaction name="separator"/>
+     <addaction name="actionGrid"/>
+     <addaction name="separator"/>
+     <addaction name="actionGrid_X"/>
+     <addaction name="actionGrid_Y"/>
+     <addaction name="actionGrid_Z"/>
+    </widget>
+    <widget class="QMenu" name="menu2D">
+     <property name="title">
+      <string>2D</string>
+     </property>
+     <addaction name="actionAxial_Projection_2"/>
+     <addaction name="actionCoronal_Projection"/>
+     <addaction name="actionSagitial_Projection_2"/>
+     <addaction name="actioncross_Section_Projection"/>
+     <addaction name="actionDental_curve"/>
+     <addaction name="actionAll_Projection"/>
+    </widget>
+    <widget class="QMenu" name="menuObjects">
+     <property name="title">
+      <string>Objects</string>
+     </property>
+     <addaction name="actionVolume_Rendering_2"/>
+     <addaction name="actionScan_Appliance_Model"/>
+     <addaction name="actionImported_Model"/>
+     <addaction name="actionMandibular_implants"/>
+     <addaction name="actionMaxillary_implants"/>
+     <addaction name="actionNerves"/>
+     <addaction name="actionTeeth"/>
+     <addaction name="actionScan_Body"/>
+     <addaction name="actionScan_Appliance_Model_Outline"/>
+     <addaction name="actionImported_MModel_Outline"/>
+     <addaction name="actionTooth_outline"/>
+     <addaction name="actionLocks"/>
+     <addaction name="actionInformation_Widgets"/>
+     <addaction name="actionPachient_InFo"/>
+    </widget>
+    <widget class="QMenu" name="menuCurve">
+     <property name="title">
+      <string>Curve</string>
+     </property>
+     <addaction name="actionMandible"/>
+     <addaction name="actionMaxilla"/>
+     <addaction name="actionCustome"/>
+     <addaction name="separator"/>
+     <addaction name="actionDetect_Curves"/>
+     <addaction name="actionLock_Curves"/>
+     <addaction name="actionDraw_Paronamic_Curve"/>
+    </widget>
+    <addaction name="menuViews"/>
+    <addaction name="menuPanels_2"/>
+    <addaction name="menuToolbars"/>
+    <addaction name="menuPerspectives"/>
+    <addaction name="separator"/>
+    <addaction name="menu3D"/>
+    <addaction name="menu2D"/>
+    <addaction name="menuObjects"/>
+    <addaction name="menuCurve"/>
+    <addaction name="separator"/>
+    <addaction name="actionReset_Zoom_2"/>
+    <addaction name="actionLoad_Dephault_Layout_2"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionShow_Help"/>
+    <addaction name="actionOnline_Video_Tuturials"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuView"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>35</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>35</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#3B3634;</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenFolder"/>
+   <addaction name="actionFilters"/>
+   <addaction name="actionHisto"/>
+   <addaction name="actionDefault"/>
+   <addaction name="actionlength"/>
+   <addaction name="actionAngle"/>
+   <addaction name="actionArchReset"/>
+  </widget>
+  <action name="actionOpenFolder">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/openFile.png</normaloff>../icons/openFile.png</iconset>
+   </property>
+   <property name="text">
+    <string>openFolder</string>
+   </property>
+  </action>
+  <action name="actionFilters">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/filter.png</normaloff>../icons/filter.png</iconset>
+   </property>
+   <property name="text">
+    <string>filters</string>
+   </property>
+  </action>
+  <action name="actionHisto">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/histo.png</normaloff>../icons/histo.png</iconset>
+   </property>
+   <property name="text">
+    <string>histo</string>
+   </property>
+  </action>
+  <action name="actionlength">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/ruler2.png</normaloff>../icons/ruler2.png</iconset>
+   </property>
+   <property name="text">
+    <string>length</string>
+   </property>
+  </action>
+  <action name="actionAngle">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/prot.png</normaloff>../icons/prot.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionArchReset">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/curve.png</normaloff>../icons/curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>arch</string>
+   </property>
+  </action>
+  <action name="actionPresperictive">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Presperictive.PNG</normaloff>../../images/Presperictive.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Presperictive</string>
+   </property>
+  </action>
+  <action name="actionPanels">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Panels.PNG</normaloff>../../images/Panels.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Panels</string>
+   </property>
+  </action>
+  <action name="actionResetZoom">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ResetZoom.PNG</normaloff>../../images/ResetZoom.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>ResetZoom</string>
+   </property>
+  </action>
+  <action name="actionStartWizard">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/StartWizard.PNG</normaloff>../../images/StartWizard.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>StartWizard</string>
+   </property>
+  </action>
+  <action name="actionImportSTLModel_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ImportSTLModel.PNG</normaloff>../../images/ImportSTLModel.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>ImportSTLModel</string>
+   </property>
+  </action>
+  <action name="actionAddNerve_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AddNerve.PNG</normaloff>../../images/AddNerve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>AddNerve</string>
+   </property>
+  </action>
+  <action name="actionAddTooth_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AddTooth.PNG</normaloff>../../images/AddTooth.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>AddTooth</string>
+   </property>
+  </action>
+  <action name="actionDrawDentalCurve_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DrawDentalCurve.PNG</normaloff>../../images/DrawDentalCurve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>DrawDentalCurve</string>
+   </property>
+  </action>
+  <action name="actionManageCatalogs_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ManageCatalogs.PNG</normaloff>../../images/ManageCatalogs.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>ManageCatalogs</string>
+   </property>
+  </action>
+  <action name="actionHighMixillaryImplants_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HighMixillaryImplants.PNG</normaloff>../../images/HighMixillaryImplants.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>HighMixillaryImplants</string>
+   </property>
+  </action>
+  <action name="actionHideImplementaryImplents_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideImplementaryImplents.PNG</normaloff>../../images/HideImplementaryImplents.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>HideImplementaryImplents</string>
+   </property>
+  </action>
+  <action name="actionHideNerves_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideNerves.PNG</normaloff>../../images/HideNerves.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>HideNerves</string>
+   </property>
+  </action>
+  <action name="actionHideTeeth_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideTeeth.PNG</normaloff>../../images/HideTeeth.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>HideTeeth</string>
+   </property>
+  </action>
+  <action name="actionHideScanBodies_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideScanBodies.PNG</normaloff>../../images/HideScanBodies.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>HideScanBodies</string>
+   </property>
+  </action>
+  <action name="actionHideAllProjections_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideAllProjections.PNG</normaloff>../../images/HideAllProjections.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>HideAllProjections</string>
+   </property>
+  </action>
+  <action name="actionhideLocks_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/hideLocks.PNG</normaloff>../../images/hideLocks.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>hideLocks</string>
+   </property>
+  </action>
+  <action name="actionDentasyWindowAdjustments_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DentasyWindowAdjustments.PNG</normaloff>../../images/DentasyWindowAdjustments.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>DentasyWindowAdjustments</string>
+   </property>
+  </action>
+  <action name="actionTrackBallModule_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/TrackBallModule.PNG</normaloff>../../images/TrackBallModule.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>TrackBallModule</string>
+   </property>
+  </action>
+  <action name="actionScaleScene_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScaleScene.PNG</normaloff>../../images/ScaleScene.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>ScaleScene</string>
+   </property>
+  </action>
+  <action name="actionMoveImage_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/MoveImage.PNG</normaloff>../../images/MoveImage.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>MoveImage</string>
+   </property>
+  </action>
+  <action name="actionDensityValueMeasure_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DensityValueMeasure.PNG</normaloff>../../images/DensityValueMeasure.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>DensityValueMeasure</string>
+   </property>
+  </action>
+  <action name="actionDistanceMeasure_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DistanceMeasure.PNG</normaloff>../../images/DistanceMeasure.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>DistanceMeasure</string>
+   </property>
+  </action>
+  <action name="actionAngularMeasure_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AngularMeasure.PNG</normaloff>../../images/AngularMeasure.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>AngularMeasure</string>
+   </property>
+  </action>
+  <action name="actionWWW_BLUESKY_COM_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/WWW_BLUESKY_COM.PNG</normaloff>../../images/WWW_BLUESKY_COM.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>WWW_BLUESKY_COM</string>
+   </property>
+  </action>
+  <action name="actionStartTeamViewer_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/StartTeamViewer.PNG</normaloff>../../images/StartTeamViewer.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>StartTeamViewer</string>
+   </property>
+  </action>
+  <action name="actionUploadToBiobigBox_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/UploadToBiobigBox.PNG</normaloff>../../images/UploadToBiobigBox.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>UploadToBiobigBox</string>
+   </property>
+  </action>
+  <action name="actionAccessMyFiles_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AccessMyFiles.PNG</normaloff>../../images/AccessMyFiles.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>AccessMyFiles</string>
+   </property>
+  </action>
+  <action name="actionFullScreenMode_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/FullScreenMode.PNG</normaloff>../../images/FullScreenMode.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>FullScreenMode</string>
+   </property>
+  </action>
+  <action name="actionAutomaticCurve">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AutomaticCurve.PNG</normaloff>../../images/AutomaticCurve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>AutomaticCurve</string>
+   </property>
+  </action>
+  <action name="actionNew_Project">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/NewProject.PNG</normaloff>../../images/NewProject.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </action>
+  <action name="actionopen_project">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/OpenProject.PNG</normaloff>../../images/OpenProject.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>open project</string>
+   </property>
+  </action>
+  <action name="actionRecent_projects">
+   <property name="text">
+    <string>Recent projects</string>
+   </property>
+  </action>
+  <action name="actionLearn">
+   <property name="text">
+    <string>Learn </string>
+   </property>
+  </action>
+  <action name="actionsave_project">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/SaveProject.PNG</normaloff>../../images/SaveProject.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Save Project</string>
+   </property>
+  </action>
+  <action name="actionSave_Project_As">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/SaveProject.PNG</normaloff>../../images/SaveProject.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Save Project As...</string>
+   </property>
+  </action>
+  <action name="actionClose_Project">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CloseProject.PNG</normaloff>../../images/CloseProject.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Close Project</string>
+   </property>
+  </action>
+  <action name="actionImport_Dicoms">
+   <property name="text">
+    <string>Import Dicoms</string>
+   </property>
+  </action>
+  <action name="actionImport_STL_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ImportSTLModel.PNG</normaloff>../../images/ImportSTLModel.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Import STL Model</string>
+   </property>
+  </action>
+  <action name="actionImport_face_scan">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ImportFaceScan.PNG</normaloff>../../images/ImportFaceScan.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Import face scan</string>
+   </property>
+  </action>
+  <action name="actionExport_data">
+   <property name="text">
+    <string>Export data</string>
+   </property>
+  </action>
+  <action name="actionPurchase_STL_Expots">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/PurchaseSomethings.PNG</normaloff>../../images/PurchaseSomethings.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Purchase STL Expots</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/print.PNG</normaloff>../../images/print.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionSave_Image">
+   <property name="text">
+    <string>Save Image</string>
+   </property>
+  </action>
+  <action name="actionAnonymize">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Annonymus.PNG</normaloff>../../images/Annonymus.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Anonymize</string>
+   </property>
+  </action>
+  <action name="actionShow_Data_Properities">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ShowDataProperities.PNG</normaloff>../../images/ShowDataProperities.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Show Data Properities</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Exit.PNG</normaloff>../../images/Exit.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionUndo_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Undo.PNG</normaloff>../../images/Undo.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Redo.PNG</normaloff>../../images/Redo.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionDensity_Window_Adjusting">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DentasyWindowAdjustments.PNG</normaloff>../../images/DentasyWindowAdjustments.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Density Window Adjusting</string>
+   </property>
+  </action>
+  <action name="actionTrackball_Mode">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/TrackBallModule.PNG</normaloff>../../images/TrackBallModule.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Trackball Mode</string>
+   </property>
+  </action>
+  <action name="actionScale_Scene">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScaleScene.PNG</normaloff>../../images/ScaleScene.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Scale Scene</string>
+   </property>
+  </action>
+  <action name="actionMove_Image">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/MoveImage.PNG</normaloff>../../images/MoveImage.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Move Image</string>
+   </property>
+  </action>
+  <action name="actionAdd_Nerve">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AddNerve.PNG</normaloff>../../images/AddNerve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Add Nerve</string>
+   </property>
+  </action>
+  <action name="actionAdd_Marker">
+   <property name="text">
+    <string>Add Marker</string>
+   </property>
+  </action>
+  <action name="actionAdd_Text">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Add_Text.PNG</normaloff>../../images/Add_Text.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Add Text</string>
+   </property>
+  </action>
+  <action name="actionAdd_Scale">
+   <property name="text">
+    <string>Add Scale </string>
+   </property>
+  </action>
+  <action name="actionDraw_Curve">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DrawDentalCurve.PNG</normaloff>../../images/DrawDentalCurve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Draw Curve</string>
+   </property>
+  </action>
+  <action name="actionDensity_Value_Measure_Hu">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DensityValueMeasure.PNG</normaloff>../../images/DensityValueMeasure.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Density Value Measure [Hu]</string>
+   </property>
+  </action>
+  <action name="actionDistance_Measure_mm">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DistanceMeasure.PNG</normaloff>../../images/DistanceMeasure.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Distance Measure [mm]</string>
+   </property>
+  </action>
+  <action name="actionAngular_Measure">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AngularMeasure.PNG</normaloff>../../images/AngularMeasure.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Angular Measure [*]</string>
+   </property>
+  </action>
+  <action name="actionClear_Notes">
+   <property name="text">
+    <string>Clear Notes</string>
+   </property>
+  </action>
+  <action name="actionClear_Measurements">
+   <property name="text">
+    <string>Clear Measurements</string>
+   </property>
+  </action>
+  <action name="actionFiltering">
+   <property name="text">
+    <string>Filtering</string>
+   </property>
+  </action>
+  <action name="actionManage_Catelogs">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ManageCatalogs.PNG</normaloff>../../images/ManageCatalogs.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Manage Catelogs</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/periferance.PNG</normaloff>../../images/periferance.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionReset_Zoom">
+   <property name="text">
+    <string>Reset Zoom</string>
+   </property>
+  </action>
+  <action name="actionLoad_Dephault_Layout">
+   <property name="text">
+    <string>Load Dephault Layout</string>
+   </property>
+  </action>
+  <action name="action3D_view">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/3D_Views.PNG</normaloff>../../images/3D_Views.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>3D view</string>
+   </property>
+  </action>
+  <action name="actionAxial_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Axial.PNG</normaloff>../../images/Axial.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Axial View</string>
+   </property>
+  </action>
+  <action name="actionCoronal_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Coronal.PNG</normaloff>../../images/Coronal.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Coronal View</string>
+   </property>
+  </action>
+  <action name="actionSagital_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Sagital.PNG</normaloff>../../images/Sagital.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Sagital View</string>
+   </property>
+  </action>
+  <action name="actionPanorama_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Paronamic.PNG</normaloff>../../images/Paronamic.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Paronama View</string>
+   </property>
+  </action>
+  <action name="actionCross_Sections_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/crossSection.PNG</normaloff>../../images/crossSection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Cross-Sections View</string>
+   </property>
+  </action>
+  <action name="actionImplant_Tangential_View">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Implant_Tangential_View.PNG</normaloff>../../images/Implant_Tangential_View.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Implant/Tangential View</string>
+   </property>
+  </action>
+  <action name="actionBrigtness_Contrast">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Brigtness_Contrast.PNG</normaloff>../../images/Brigtness_Contrast.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Brigtness/Contrast</string>
+   </property>
+  </action>
+  <action name="actionOrtho_Slices">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/OrthoSlices.PNG</normaloff>../../images/OrthoSlices.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Ortho Slices</string>
+   </property>
+  </action>
+  <action name="actionBuccal_Bite_Registration">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/BlueccalBiteRegistration.PNG</normaloff>../../images/BlueccalBiteRegistration.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Buccal Bite Registration</string>
+   </property>
+  </action>
+  <action name="actionModel_Edit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ModelEdit.PNG</normaloff>../../images/ModelEdit.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Model Edit</string>
+   </property>
+  </action>
+  <action name="actionVolume_Rendering">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/VolumeRendering.PNG</normaloff>../../images/VolumeRendering.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Volume Rendering</string>
+   </property>
+  </action>
+  <action name="actionSurfaces">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Surfaces.PNG</normaloff>../../images/Surfaces.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Surfaces</string>
+   </property>
+  </action>
+  <action name="actionNotes_List">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/NotesList.PNG</normaloff>../../images/NotesList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Notes List</string>
+   </property>
+  </action>
+  <action name="actionNerve_List">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/NerveList.PNG</normaloff>../../images/NerveList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Nerve List</string>
+   </property>
+  </action>
+  <action name="actionTooth_List">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ToothList.PNG</normaloff>../../images/ToothList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Tooth List</string>
+   </property>
+  </action>
+  <action name="actionScreen_shots">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScreenShotss.PNG</normaloff>../../images/ScreenShotss.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Screen shots</string>
+   </property>
+  </action>
+  <action name="actionModel_Manipulation">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ModelManibulation.PNG</normaloff>../../images/ModelManibulation.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Model Manipulation</string>
+   </property>
+  </action>
+  <action name="actionSegmentation">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Segmentation.PNG</normaloff>../../images/Segmentation.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Segmentation</string>
+   </property>
+  </action>
+  <action name="actionMain_Toolbar">
+   <property name="text">
+    <string>Main Toolbar</string>
+   </property>
+  </action>
+  <action name="actionTools_Toolbar">
+   <property name="text">
+    <string>Tools  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionVisability_Toolbar">
+   <property name="text">
+    <string>Visability  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionPanels_Toolbar">
+   <property name="text">
+    <string>Panels  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionView">
+   <property name="text">
+    <string>View  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionMouse_Toolbar">
+   <property name="text">
+    <string>Mouse  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionMeaasurements_Toolbar">
+   <property name="text">
+    <string>Meaasurements  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionBio_Toolbar">
+   <property name="text">
+    <string>Bio  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionPlanning_Toolbar">
+   <property name="text">
+    <string>Planning  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionMessages_Toolbar">
+   <property name="text">
+    <string>Messages  Toolbar</string>
+   </property>
+  </action>
+  <action name="actionImplant_cross_sections">
+   <property name="text">
+    <string>Implant cross-sections</string>
+   </property>
+  </action>
+  <action name="actionImplant_Tangential_3">
+   <property name="text">
+    <string>Implant Tangential 3</string>
+   </property>
+  </action>
+  <action name="actionImplant_Tangential_5">
+   <property name="text">
+    <string>Implant Tangential 5</string>
+   </property>
+  </action>
+  <action name="actionMRP">
+   <property name="text">
+    <string>MRP </string>
+   </property>
+  </action>
+  <action name="action3d_Only">
+   <property name="text">
+    <string>3D Only</string>
+   </property>
+  </action>
+  <action name="actionTabs">
+   <property name="text">
+    <string>Tabs</string>
+   </property>
+  </action>
+  <action name="action3d_OverView">
+   <property name="text">
+    <string>3D OverView</string>
+   </property>
+  </action>
+  <action name="action3d_Paronamic">
+   <property name="text">
+    <string>3D Paronamic</string>
+   </property>
+  </action>
+  <action name="action3d_Paronamic_cross_sections">
+   <property name="text">
+    <string>3D Paronamic cross-sections</string>
+   </property>
+  </action>
+  <action name="action3D_Tangential">
+   <property name="text">
+    <string>3D Tangential</string>
+   </property>
+  </action>
+  <action name="actionAxial_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AxialProjection.PNG</normaloff>../../images/AxialProjection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Axial Projection</string>
+   </property>
+  </action>
+  <action name="actionCronal_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CoronalProjection.PNG</normaloff>../../images/CoronalProjection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Cronal Projection</string>
+   </property>
+  </action>
+  <action name="actionSagitial_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/SagitialProjection.PNG</normaloff>../../images/SagitialProjection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Sagitial Projection</string>
+   </property>
+  </action>
+  <action name="actionCross_section_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Cross_Section_Projection.PNG</normaloff>../../images/Cross_Section_Projection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Cross-section Projection</string>
+   </property>
+  </action>
+  <action name="actionGrid">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Grid.PNG</normaloff>../../images/Grid.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Grid</string>
+   </property>
+  </action>
+  <action name="actionGrid_X">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/GridX.PNG</normaloff>../../images/GridX.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Grid X</string>
+   </property>
+  </action>
+  <action name="actionGrid_Y">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/GridY.PNG</normaloff>../../images/GridY.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Grid Y</string>
+   </property>
+  </action>
+  <action name="actionGrid_Z">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/GridZ.PNG</normaloff>../../images/GridZ.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Grid Z</string>
+   </property>
+  </action>
+  <action name="actionAxial_Projection_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AxialProjection.PNG</normaloff>../../images/AxialProjection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Axial Projection</string>
+   </property>
+  </action>
+  <action name="actionCoronal_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CoronalProjection.PNG</normaloff>../../images/CoronalProjection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Coronal Projection</string>
+   </property>
+  </action>
+  <action name="actionSagitial_Projection_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/SagitialProjection.PNG</normaloff>../../images/SagitialProjection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Sagitial Projection</string>
+   </property>
+  </action>
+  <action name="actioncross_Section_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Cross_Section_Projection.PNG</normaloff>../../images/Cross_Section_Projection.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>cross-Section Projection</string>
+   </property>
+  </action>
+  <action name="actionDental_curve">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DentalCurve.PNG</normaloff>../../images/DentalCurve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Dental Curve</string>
+   </property>
+  </action>
+  <action name="actionAll_Projection">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AutomaticCurve.PNG</normaloff>../../images/AutomaticCurve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>All Projection</string>
+   </property>
+  </action>
+  <action name="actionVolume_Rendering_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/VolumeRenderingSkel.PNG</normaloff>../../images/VolumeRenderingSkel.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Volume Rendering </string>
+   </property>
+  </action>
+  <action name="actionScan_Appliance_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScanApplicationModel.PNG</normaloff>../../images/ScanApplicationModel.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Scan Appliance Model</string>
+   </property>
+  </action>
+  <action name="actionImported_Model">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ImportedModel.PNG</normaloff>../../images/ImportedModel.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Imported Model</string>
+   </property>
+  </action>
+  <action name="actionMandibular_implants">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideImplementaryImplents.PNG</normaloff>../../images/HideImplementaryImplents.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Mandibular implants</string>
+   </property>
+  </action>
+  <action name="actionMaxillary_implants">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HighMixillaryImplants.PNG</normaloff>../../images/HighMixillaryImplants.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Maxillary implants</string>
+   </property>
+  </action>
+  <action name="actionNerves">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideNerves.PNG</normaloff>../../images/HideNerves.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Nerves</string>
+   </property>
+  </action>
+  <action name="actionTeeth">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Teeth.PNG</normaloff>../../images/Teeth.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Teeth</string>
+   </property>
+  </action>
+  <action name="actionScan_Body">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/HideScanBodies.PNG</normaloff>../../images/HideScanBodies.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Scan Body</string>
+   </property>
+  </action>
+  <action name="actionScan_Appliance_Model_Outline">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScanApplicationModelOutLine.PNG</normaloff>../../images/ScanApplicationModelOutLine.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Scan Appliance Model Outline</string>
+   </property>
+  </action>
+  <action name="actionImported_MModel_Outline">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/IMportedModeulOutline.PNG</normaloff>../../images/IMportedModeulOutline.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Imported Model Outline</string>
+   </property>
+  </action>
+  <action name="actionTooth_outline">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ToothOutline.PNG</normaloff>../../images/ToothOutline.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Tooth Outline</string>
+   </property>
+  </action>
+  <action name="actionLocks">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Locks.PNG</normaloff>../../images/Locks.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Locks</string>
+   </property>
+  </action>
+  <action name="actionInformation_Widgets">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CheckCorrect.PNG</normaloff>../../images/CheckCorrect.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Information Widgets</string>
+   </property>
+  </action>
+  <action name="actionPachient_InFo">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CheckCorrect.PNG</normaloff>../../images/CheckCorrect.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Pachient Info</string>
+   </property>
+  </action>
+  <action name="actionMandible">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CheckCorrect.PNG</normaloff>../../images/CheckCorrect.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Mandible</string>
+   </property>
+  </action>
+  <action name="actionMaxilla">
+   <property name="text">
+    <string>Maxilla</string>
+   </property>
+  </action>
+  <action name="actionCustome">
+   <property name="text">
+    <string>Custome</string>
+   </property>
+  </action>
+  <action name="actionDetect_Curves">
+   <property name="text">
+    <string>Detect Curves</string>
+   </property>
+  </action>
+  <action name="actionLock_Curves">
+   <property name="text">
+    <string>Lock Curves</string>
+   </property>
+  </action>
+  <action name="actionDraw_Paronamic_Curve">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/DrawDentalCurve.PNG</normaloff>../../images/DrawDentalCurve.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Draw Paronamic Curve</string>
+   </property>
+  </action>
+  <action name="actionReset_Zoom_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScaleScene.PNG</normaloff>../../images/ScaleScene.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Reset Zoom</string>
+   </property>
+  </action>
+  <action name="actionLoad_Dephault_Layout_2">
+   <property name="text">
+    <string>Load Dephault Layout</string>
+   </property>
+  </action>
+  <action name="actionBrightness_Contrast">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Brigtness_Contrast.PNG</normaloff>../../images/Brigtness_Contrast.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Brightness/Contrast</string>
+   </property>
+  </action>
+  <action name="actionOrtho_Slices_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/OrthoSlices.PNG</normaloff>../../images/OrthoSlices.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Ortho Slices</string>
+   </property>
+  </action>
+  <action name="actionBuccal_Bite_Registeration">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/BlueccalBiteRegistration.PNG</normaloff>../../images/BlueccalBiteRegistration.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Buccal Bite Registeration</string>
+   </property>
+  </action>
+  <action name="actionModel_Edit_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ModelEdit.PNG</normaloff>../../images/ModelEdit.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Model Edit</string>
+   </property>
+  </action>
+  <action name="actionVolume_Rendering_3">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/VolumeRendering.PNG</normaloff>../../images/VolumeRendering.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Volume Rendering</string>
+   </property>
+  </action>
+  <action name="actionSurfaces_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Surfaces.PNG</normaloff>../../images/Surfaces.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Surfaces</string>
+   </property>
+  </action>
+  <action name="actionNotes_List_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/NotesList.PNG</normaloff>../../images/NotesList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Notes List</string>
+   </property>
+  </action>
+  <action name="actionTooth_List_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ToothList.PNG</normaloff>../../images/ToothList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Tooth List</string>
+   </property>
+  </action>
+  <action name="actionNerve_List_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/NerveList.PNG</normaloff>../../images/NerveList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Nerve List</string>
+   </property>
+  </action>
+  <action name="actionTooth_List_3">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ToothList.PNG</normaloff>../../images/ToothList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Tooth List</string>
+   </property>
+  </action>
+  <action name="actionScreen_Shots">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ScreenShotss.PNG</normaloff>../../images/ScreenShotss.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Screen Shots</string>
+   </property>
+  </action>
+  <action name="actionModel_Maipulaton">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ModelManibulation.PNG</normaloff>../../images/ModelManibulation.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Model Maipulaton</string>
+   </property>
+  </action>
+  <action name="actionSegmentation_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Segmentation.PNG</normaloff>../../images/Segmentation.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Segmentation</string>
+   </property>
+  </action>
+  <action name="actionTabify_Panel">
+   <property name="text">
+    <string>Tabify Panel</string>
+   </property>
+  </action>
+  <action name="actionprevious_Panel">
+   <property name="text">
+    <string>previous Panel</string>
+   </property>
+  </action>
+  <action name="actionNext_Panel">
+   <property name="text">
+    <string>Next Panel</string>
+   </property>
+  </action>
+  <action name="actionClose_Active_Panel">
+   <property name="text">
+    <string>Close Active Panel</string>
+   </property>
+  </action>
+  <action name="actionRealign_Scan_Appliance_Data">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Realign Scan Appliance Data</string>
+   </property>
+  </action>
+  <action name="actionAdjust_Model_Position">
+   <property name="text">
+    <string>Adjust Model Position</string>
+   </property>
+  </action>
+  <action name="actionAdd_Tooth">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AddTooth.PNG</normaloff>../../images/AddTooth.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Add Tooth</string>
+   </property>
+  </action>
+  <action name="actionRemove_Tooth">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Remove_Tooth.PNG</normaloff>../../images/Remove_Tooth.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Tooth</string>
+   </property>
+  </action>
+  <action name="actionReplace_Tooth">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Replace Tooth.PNG</normaloff>../../images/Replace Tooth.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Replace Tooth</string>
+   </property>
+  </action>
+  <action name="actionShow_Tooth_Outline">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ToothOutline.PNG</normaloff>../../images/ToothOutline.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Show Tooth Outline</string>
+   </property>
+  </action>
+  <action name="actiontooth_List">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ToothList.PNG</normaloff>../../images/ToothList.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>tooth List</string>
+   </property>
+  </action>
+  <action name="actionModel_Editing">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ModelEditing.PNG</normaloff>../../images/ModelEditing.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Model Editing</string>
+   </property>
+  </action>
+  <action name="actionCrown_and_Bridge">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/CrownAndBridge.PNG</normaloff>../../images/CrownAndBridge.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Crown and Bridge</string>
+   </property>
+  </action>
+  <action name="actionDenture">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Denture.PNG</normaloff>../../images/Denture.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Denture</string>
+   </property>
+  </action>
+  <action name="actionSelect_Module">
+   <property name="text">
+    <string>Select Module</string>
+   </property>
+  </action>
+  <action name="actionViewing">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Viewing.PNG</normaloff>../../images/Viewing.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Viewing</string>
+   </property>
+  </action>
+  <action name="actionNormal">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Normal.PNG</normaloff>../../images/Normal.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Normal</string>
+   </property>
+  </action>
+  <action name="actionAdvanced">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/Advanced.PNG</normaloff>../../images/Advanced.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Advanced</string>
+   </property>
+  </action>
+  <action name="actionShow_Help">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/ShowHelp.PNG</normaloff>../../images/ShowHelp.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Show Help</string>
+   </property>
+  </action>
+  <action name="actionOnline_Video_Tuturials">
+   <property name="text">
+    <string>Online Video Tuturials....</string>
+   </property>
+  </action>
+  <action name="actionSave_Ortho_Calibration_File">
+   <property name="text">
+    <string>Save Ortho Calibration File...</string>
+   </property>
+  </action>
+  <action name="actionRemote_Support">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/RemoteSupport.PNG</normaloff>../../images/RemoteSupport.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Remote Support</string>
+   </property>
+  </action>
+  <action name="actionCheck_For_Updates">
+   <property name="text">
+    <string>Check For Updates</string>
+   </property>
+  </action>
+  <action name="actionRegister_License">
+   <property name="text">
+    <string>Register License....</string>
+   </property>
+  </action>
+  <action name="actionImport_Licecnse_File">
+   <property name="text">
+    <string>Import Licecnse File...</string>
+   </property>
+  </action>
+  <action name="actionUpload_BioBigBox">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/UploadToBiobigBox.PNG</normaloff>../../images/UploadToBiobigBox.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Upload BioBigBox</string>
+   </property>
+  </action>
+  <action name="actionAcess_my_Files">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../images/AccessMyFiles.PNG</normaloff>../../images/AccessMyFiles.PNG</iconset>
+   </property>
+   <property name="text">
+    <string>Acess my Files</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About....</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="icon">
+    <iconset>
+     <normaloff>../../measure/icons/select.png</normaloff>../../measure/icons/select.png</iconset>
+   </property>
+   <property name="text">
+    <string>Default</string>
+   </property>
+  </action>
+  <action name="action_select_Measure">
+   <property name="text">
+    <string>Select Measure</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
