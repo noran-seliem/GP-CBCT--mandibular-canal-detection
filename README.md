@@ -2,7 +2,7 @@
 
 A medical application to visualize dicom images from CBCT in axial, coronal, sagital and 3D views using MPR, generate panoramic image to visualize teeth and segment the mandibular canal on it by selecting points on it.
 
-
+[![project video](https://img.youtube.com/vi/jpeyzlOISpI/maxresdefault.jpg)](https://www.youtube.com/embed/jpeyzlOISpI)
 
 ## tools
 
